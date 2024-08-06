@@ -4,7 +4,7 @@ function convert() {
     d2=d.split("-");
     m=""
     for (let i = 0; i <mon.length; i++) {
-        if(d2[1].toLowerCase()==mon[i]){
+        if(d2[1].substring(0,3).toLowerCase()==mon[i]){
             m=i+1
             break
         }
