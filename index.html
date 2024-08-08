@@ -4,17 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Date formate</title>
+    <title>Useful Tools</title>
     <script type="text/javascript" src=lib.js></script>
 </head>
 
 <body>
     <div style="text-align: center;">
-        <h1>Date formater</h1>
+        <h1>Change date format</h1>
         <input type="text" id="date" title="d" value="">
         <button onclick="convert()" type="button">Convert</button>
         <p>Formatted Date is</p>
         <p id="result"></p>
+    </div>
+    <div style="text-align: center;">
+        <h1>Clep helper</h1>
+        <p>Enter clep info</p>
+        <input type="text" id="clep" title="d" value="" style="width: 500px;">
+        <p>Enter clep score</p>
+        <input type="text" id="score" title="d" value="">
+        <br>
+        <button onclick="clep()" type="button">Clep report</button>
+        <p>Clep result</p>
+        <p id="result2"></p>
+        <p>DOB</p>
+        <p id="dob"></p>
     </div>
 </body>
 

@@ -28,3 +28,13 @@ function convert() {
     res=m+"/"+d2[0]+"/"+d2[2]
     document.getElementById("result").innerHTML = res
 }
+// 19970130 1 20240802 12College Algebra
+function clep() {
+    var clep = document.getElementById("clep").value
+    var score = document.getElementById("score").value
+    var res="Exam: "+clep.substring(19,clep.length)+", Date: "+clep.substring(13,15)+"/"+clep.substring(15,17)+"/"+clep.substring(9,13)+ ", Score: "+score
+    document.getElementById("result2").innerHTML = res
+    var dob=clep.substring(4,6)+"/"+clep.substring(6,8)+"/"+clep.substring(0,4)
+    document.getElementById("dob").innerHTML = dob
+
+}
