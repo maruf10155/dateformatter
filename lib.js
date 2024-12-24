@@ -32,7 +32,7 @@ function convert() {
 function clep() {
     var clep = document.getElementById("clep").value
     var score = document.getElementById("score").value
-    var res="Exam: "+clep.substring(19,clep.length)+", Date: "+clep.substring(13,15)+"/"+clep.substring(15,17)+"/"+clep.substring(9,13)+ ", Score: "+score
+    var res=clep.substring(19,clep.length)+", "+clep.substring(13,15)+"/"+clep.substring(15,17)+"/"+clep.substring(9,13)+ ", "+score
     document.getElementById("result2").innerHTML = res
     var dob=clep.substring(4,6)+"/"+clep.substring(6,8)+"/"+clep.substring(0,4)
     document.getElementById("dob").innerHTML = dob
